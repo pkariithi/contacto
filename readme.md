@@ -1,6 +1,11 @@
 # Contacto - A web app to manage contacts
 
 ## Screenshots
+![Login Page](https://github.com/pkariithi/contacto/blob/master/screenshots/login.png)
+![Dashboard Page](https://github.com/pkariithi/contacto/blob/master/screenshots/dashboard.png)
+![Users](https://github.com/pkariithi/contacto/blob/master/screenshots/users.png)
+![Contacts Bulk Upload](https://github.com/pkariithi/contacto/blob/master/screenshots/contacts-upload.png)
+![Uploaded contacts](https://github.com/pkariithi/contacto/blob/master/screenshots/contacts.png)
 
 ## Features
 - RBAC
