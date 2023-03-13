@@ -9,7 +9,7 @@ $config['db'] = [
     'database' => 'contacts',
     'charset' => 'utf8mb4',
     'username' => 'root',
-    'password' => '',
+    'password' => 'avseq01.mp4',
   ],
 
 ];

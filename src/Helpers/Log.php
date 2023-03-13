@@ -7,12 +7,14 @@ use SMVC\Helpers\Date;
 class Log {
 
   private $request;
+  private $response;
   private $config;
   private $vars = [];
 
-  public function __construct($config, Request $request) {
+  public function __construct($config, Request $request, Response $response) {
     $this->config = $config;
     $this->request = $request;
+    $this->response = $response;
   }
 
   public function info($vars, $line = null) {
@@ -50,7 +52,7 @@ class Log {
     $defaults = [
       'TransationID' => microtime(true),
       'LogID' => null,
-      'RequestURL' => str_replace($this->config->app->base_href,'', $this->request->fullUrl),
+      'RequestURL' => str_replace($this->response->getBaseUrl(),'', $this->request->fullUrl),
       'HTTPMethod' => $method,
       'TransactionType' => null,
       'Action' => null,

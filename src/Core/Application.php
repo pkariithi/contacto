@@ -50,11 +50,15 @@ class Application {
       file_get_contents('php://input')
     );
 
-    // log
-    $this->app->log = new Log($this->app->config, $this->app->request);
-
     // initialize the response object
     $this->app->response = new Response();
+
+    // log
+    $this->app->log = new Log(
+      $this->app->config,
+      $this->app->request,
+      $this->app->response
+    );
 
     // load current uri
     $this->app->request->uri = $this->loadUri();

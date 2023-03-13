@@ -23,6 +23,7 @@
 - Create a database and import the SQL file located at config/contacts.sql
 - Update or overwrite the DB configs located at config/base/db.config.php
 - Open up the public folder of the project in a terminal
+- Install packages via composer - composer install
 - Start the PHP server (php -S 127.0.0.1:4000)
 - Open your browser to the URL and port
 - Login using the accounts listed at public/index.php
